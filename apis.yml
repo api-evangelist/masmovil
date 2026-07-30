@@ -1,8 +1,27 @@
 aid: masmovil
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/masmovil.png
 name: Masmovil
-description: 'Masmovil is a company surfaced as a portfolio company of northzone and added to the API
-  Evangelist network as a stub for enrichment. Sector: consumer. This profile is a lead awaiting the enrichment
-  pipeline.'
+description: >-
+  Masmovil (MasMovil Group) is a Spanish telecommunications operator providing
+  mobile, fiber optic internet, and fixed-line services to consumers and
+  businesses across Spain, with bundled fiber-plus-mobile packages, device
+  sales, roaming, and international calling. The group operates a family of
+  consumer telecom brands and, following its 2024 combination with Orange Spain,
+  is part of the MasOrange joint venture. As of this enrichment pass Masmovil
+  publishes no public developer portal, API documentation, or machine-readable
+  API specification; the network profile carries the identity and a domain
+  security posture probe only.
 url: https://raw.githubusercontent.com/api-evangelist/masmovil/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,10 +31,15 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
 - Consumer
+- Telecommunications
+- Mobile
+- Fiber
+- Internet
+- Spain
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +47,12 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/masmovil-domain-security.yml
 - type: Website
-  url: http://www.masmovil.es
+  url: https://www.masmovil.es
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 2
+  pass: local-v1
