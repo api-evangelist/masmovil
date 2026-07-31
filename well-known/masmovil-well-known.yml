@@ -1,0 +1,13 @@
+generated: '2026-07-20'
+method: probed
+source: live probes of /.well-known/* on masmovil hosts
+host: https://www.masmovil.es
+documents:
+- path: /.well-known/security.txt
+  status: 404
+- path: /.well-known/openid-configuration
+  status: 404
+notes: >-
+  No /.well-known discovery documents are published. Developer subdomains
+  developers.masmovil.es and api.masmovil.es do not resolve (NXDOMAIN).
+  Masmovil is a consumer telecom brand with no public API/developer surface.
